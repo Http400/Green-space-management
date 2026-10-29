@@ -1,0 +1,41 @@
+.map-with-jobs {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 16px;
+  align-items: start;
+}
+
+.map-with-jobs__controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.map-with-jobs__new-job {
+  display: grid;
+  gap: 8px;
+}
+
+.job-list {
+  padding: 16px;
+  border: 1px solid var(--border);
+}
+
+.job-list__status {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.job-list__status--todo {
+  color: #d97706;
+}
+
+.job-list__status--done {
+  color: #15803d;
+}
+
+@media (max-width: 700px) {
+  .map-with-jobs {
+    grid-template-columns: 1fr;
+  }
+}
